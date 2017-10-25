@@ -38,6 +38,7 @@ public class SocialConnector
         if(activityType.EndsWith("Mail")) result = ActivityType.Mail;
         if(activityType.EndsWith("Facebook")) result = ActivityType.Facebook;
         if(activityType.EndsWith("Twitter")) result = ActivityType.Twitter;
+        if(activityType.EndsWith("line.Share")) result = ActivityType.Line;
         return result;
     }
 
@@ -93,6 +94,7 @@ public class SocialConnector
         Mail,
         Facebook,
         Twitter,
+        Line,
         Unknown,
     }
 }
